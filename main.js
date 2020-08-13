@@ -117,43 +117,10 @@ let Phone = {
         console.log('Calling ' + name)
     } 
 }
-//let arr = [], temp = [Ball, Sneakers, Phone]
 let arr = [Ball, Sneakers, Phone]
 let count = [0, 0, 0]
 const images = ['img/ball.jpg', 'img/sneakers.jpg', 'img/phone.jpg']
 const classNames = ['ball', 'sneakers', 'phone']
-/*alert('В данный момент в нашем интернет магазине доступны только 3 товара: мяч, кросовки и телефон.\nВам будет предложено добавить их в корзину по Вашему усмотрению.')
-for (let i = 0; i<3; ++i){
-    const choice = prompt('Добавить ' + temp[i].name + ' в Вашу корзину? (Да/Нет, +/-, Yes/No)')
-    if ((choice === '+') || (choice === 'Yes') || (choice === 'Да')) {
-        switch (i) {
-            case 0:
-                arr.push(Ball)
-                break
-            case 1:
-                arr.push(Sneakers)
-                break
-            case 2:
-                arr.push(Phone)
-                break
-        }
-    }
-}*/
-
-arr.forEach(function(item, i, arr) {
-    item.price = (Math.floor(Math.random() * 1000))
-  });
-
-const basket = document.querySelector('.basket')
-render()
-/*if (arr.length) {
-    const str = document.createElement('h1')
-    str.innerHTML = 'В корзине: ' + arr.length + ' товаров на сумму ' + countBasketPrice(arr) + ' рублей.'
-    basket.appendChild(str)
-}
-else {
-    basket.innerHTML = '<h1>Корзина пуста</h1>'
-}*/
 
 const catalog = document.querySelector('.catalog')
 
@@ -185,79 +152,3 @@ arr.forEach(function(one, i, arr) {
     })
     
   });
-
-
-/*const item1 = document.createElement('div')
-const img1 = document.createElement('img')
-const goodName1 = document.createElement('p')
-const buy1 = document.createElement('button')
-img1.src = 'img/ball.jpg'
-img1.classList.add('img')
-item1.classList.add('good')
-goodName1.classList.add('name')
-goodName1.innerHTML = Ball.name
-buy1.innerHTML = 'Купить'
-buy1.classList.add('btn-buy')
-catalog.appendChild(item1)
-item1.appendChild(img1)
-item1.appendChild(goodName1)
-item1.appendChild(buy1)
-buy1.addEventListener('click', function (event) {
-    event.preventDefault()
-    ++count[0]
-    render(0, '.ball')
-
-    console.log(this)
-})
-
-const item2 = document.createElement('div')
-const img2 = document.createElement('img')
-const goodName2 = document.createElement('p')
-const buy2 = document.createElement('button')
-img2.src = 'img/sneakers.jpg'
-img2.classList.add('img')
-item2.classList.add('good')
-goodName2.classList.add('name')
-goodName2.innerHTML = Sneakers.name
-buy2.innerHTML = 'Купить'
-buy2.classList.add('btn-buy')
-catalog.appendChild(item2)
-item2.appendChild(img2)
-item2.appendChild(goodName2)
-item2.appendChild(buy2)
-buy2.addEventListener('click', function (event) {
-    event.preventDefault()
-    ++count[1]
-    render(1, 'sneakers')
-
-    console.log(this)
-})
-
-const item3 = document.createElement('div')
-const img3 = document.createElement('img')
-const goodName3 = document.createElement('p')
-const buy3 = document.createElement('button')
-img3.src = 'img/phone.jpg'
-img3.classList.add('img')
-item3.classList.add('good')
-goodName3.classList.add('name')
-goodName3.innerHTML = Phone.name
-buy3.innerHTML = 'Купить'
-buy3.classList.add('btn-buy')
-catalog.appendChild(item3)
-item3.appendChild(img3)
-item3.appendChild(goodName3)
-item3.appendChild(buy3)
-buy3.addEventListener('click', function (event) {
-    event.preventDefault()
-    ++count[2]
-    render(2, 'phone')
-
-    console.log(this)
-})*/
-
-
-
-
-
-
