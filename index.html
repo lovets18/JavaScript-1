@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 0px auto;
+            width: 100%;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        .catalog {
+            float: left;
+            width: 45%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-right: 50px;
+        }
+
+        .img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        .img:hover {
+            border-color: blue;
+        }
+
+        .good {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .name {
+            text-align: center;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            margin: 0px;
+        }
+
+        .good-price {
+            text-align: center;
+            font-size: 16px;
+            font-family: sans-serif;
+            margin: 0px;
+        }
+
+        .btn-buy {
+            margin: 10px auto;
+        }
+
+        .btn-change {
+            margin: 0px 5px;
+            border-radius: 50%;
+        }
+
+        .basket {
+            float: right;
+            width: 45%;
+            outline: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper {
+            float: left;
+            background-color: blue;
+        }
+
+        .total-price {
+            text-decoration: underline;
+        }
+
+        
+
+        .img-b {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            float: left;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="catalog"></div>
+    <div class="basket"></div>
+    <script src="main.js"></script>
+</body>
+</html>
